@@ -1,0 +1,113 @@
+h1 {
+    text-align: center;
+    color: goldenrod
+}
+table {
+    margin: auto;
+    border: 2px double orange;  
+}
+th, td {
+    border: 2px ridge black;
+    width: 100px;
+    padding: 0;
+}
+.minsize {
+    height: 100px;
+}
+.right:hover div{
+    background-color: yellow;
+    animation: first 5s;
+    height: 100%;
+    width: 100%;
+}
+@keyframes first {
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+.down {
+    position: relative;
+}
+.down div{
+    position: absolute;
+    background-color: orange;
+    width: 100%;
+    top: 0;
+}
+.down:hover div{
+    width: 100%;
+    animation: second 5s forwards;
+    overflow: hidden;
+}
+@keyframes second {
+    0% {height: 0;
+        width: 100%;}
+    100% {height: 100%;}
+}
+.up {
+    position: relative;
+}
+.up div{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+}
+.up:hover div{
+    background-color: red;
+    animation: third 5s forwards;
+    width: 100%;
+}
+@keyframes third {
+    0% {height: 0%;
+        width: 100%;}
+    100% {height: 100%;}
+}
+.left:hover div {
+    float: right;
+    background-color: blueviolet;
+    height: 100%;
+    width: 100%;
+    animation: first 5s;
+}
+.from-center {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+.to-left-half {
+    background-color: blue;
+}
+.to-right-half {
+    background-color: green;
+}
+.from-center:hover .to-right-half {
+    animation: fifth 5s;
+    height: 100%;
+}
+.from-center:hover .to-left-half {
+    float: right;
+    height: 100%;
+    animation: fifth 5s;
+}
+.to-center {
+    height: 100px;
+}
+.to-center:hover .to-left-half2 {
+    display: inline-block;
+    float: right;
+    height: 100%;
+    width: 50%;
+    background-color: brown;
+    animation: fifth 5s;
+}
+.to-center:hover .to-right-half2{
+    display: inline-block;
+    background-color: black;
+    animation: fifth 5s;
+    height: 100%;
+    width: 50%;
+}
+@keyframes fifth {
+    0% {width: 0%;}
+    100% {width: 50%;}
+}
